@@ -1,0 +1,133 @@
+.form{
+padding:10px;
+border:1px solid gray;
+margin-top:50px;
+padding-bottom:50px;
+}
+.btn_submit{
+background:green;
+color:white;
+width:100%;
+border:none;
+border-radius:20px;
+padding:8px;
+}
+.creditCardForm {
+    width:100%;
+    background-color: #F8F8F8;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+
+.creditCardForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.creditCardForm .heading h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4c4e56;
+}
+
+.creditCardForm .payment {
+    float: left;
+    font-size: 18px;
+    position: relative;
+}
+
+.creditCardForm .payment .form-group {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.creditCardForm .payment .form-control {
+    line-height: 30px;
+    height: auto;
+    
+}
+
+.creditCardForm .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+
+.creditCardForm .CVV {
+    width: 35%;
+}
+
+.creditCardForm #card-number-field {
+    width: 100%;
+}
+
+.creditCardForm #expiration-date {
+    width: 49%;
+}
+
+.creditCardForm #credit_cards {
+    width: 50%;
+    margin-top: 25px;
+    text-align: right;
+}
+
+.creditCardForm #pay-now {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.
+@media(max-width: 650px) {
+    .creditCardForm .owner,
+    .creditCardForm .CVV,
+    .creditCardForm #expiration-date,
+    .creditCardForm #credit_cards {
+        width: 100%;
+    }
+    .creditCardForm #credit_cards {
+        text-align: left;
+    }
+}
+ul.card_logos {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.card_visa, .card_mastercard, .card_amex, .card_discover, .card_diners, .card_jcb {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	overflow: hidden;
+	text-align: left;
+	text-indent: -999px;
+	background: url(https://github.com/christianreed/Credit-Card-Type-Detector/blob/master/sprite-cards.png?raw=true) 0 0 no-repeat;
+}
+
+.card_mastercard {
+	background-position: -55px 0;
+}
+
+.card_amex {
+	background-position: -110px 0;
+}
+
+.card_discover {
+	background-position: -165px 0;
+}
+
+.card_diners {
+	background-position: -220px 0;
+}
+
+.card_jcb {
+	background-position: -660px 0;
+}
+
+.is_visa li, .is_mastercard li, .is_amex li, .is_discover li, .is_diners li, .is_jcb li, .is_nothing li {
+	opacity: .2;
+}
+
+.is_visa li.card_visa, .is_mastercard li.card_mastercard, .is_amex li.card_amex, .is_discover li.card_discover, .is_diners li.card_diners, .is_jcb li.card_jcb {
+	opacity: 1;
+}
